@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Parser.loadFromFile("X:\\Project\\csv.csv");
-        var dbw=new DBWorker("test5.db");
+        Parser.loadFromFile("путь до csv файла");
+        var dbw=new DBWorker("имя файла файла БД");
         dbw.createTables();
         dbw.insertData(Parser.getCountryList());
         System.out.println(dbw.getMinimalGenerosity());
